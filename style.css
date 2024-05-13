@@ -1,40 +1,54 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
 }
 
-
-
 .header-banner {
-    
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('images/hero-bg.jpg');
-    background-size: cover; 
-    background-position: center; 
-    height: 100vh; 
-    text-align: center; 
-    color: white; 
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-   
-  }
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('images/hero-bg.jpg');
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; 
+  text-align: center; 
+  color: white; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column; /* Stack children vertically */
+}
 
-  .header-banner h1 {
-    font-size: 5.3rem; 
-    text-transform: uppercase;
+.header-banner h1 {
+  font-size: 5.3rem; 
+  text-transform: uppercase;
+}
 
-  }
+.header-banner span {
+  color: #0180AA;
+}
 
-  .header-banner span{
-    color:#0180AA;
-  }
+.header-banner p {
+  font-size: 2em; 
+  margin-top: 10px; 
+  text-transform: uppercase;
+  font-family: "sans-serif";
+  font-weight: 100;
+}
 
-  .header-banner p {
-    font-size: 2em; 
-    margin-top: 10px; 
-    text-transform: uppercase;
-    font-family: "sans-serif";
-    font-weight: 100;
-  }
+.buttons-container{
+  margin-top: 20px;
+  
+}
+.button1{
+  color: white;
+  background-color:  #0180AA;
+  padding: 15px 25px 15px 25px;
+  border-color:  #0180AA;
+}
+.button2{
+  color: white;
+  background-color: rgba(255, 255, 255, 0);;
+  padding: 15px 25px 15px 25px;
+  border-color: white;
+}
+
