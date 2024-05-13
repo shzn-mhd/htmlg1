@@ -1,6 +1,11 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('images/hero-bg.jpg');
+    background-size: cover; 
+    box-sizing: border-box;
+    background-position: center;
+    height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -8,12 +13,38 @@ body{
     display: inline-block;
     padding: 5px;
     margin: 5px;
-    border: 2px solid black;
+    border: 2px solid rgb(216, 216, 216);
     cursor: pointer;
-    
+    margin-top: 20px;   
 }
 
-.list-item a{
-    color: black;
+nav{
+    width: 100%;
+    background: none;
+    overflow: auto;
+}
+
+nav ul{
+    padding: 0;
+    margin: 20px;
+    list-style-type: none;
+    margin-left: 700px;
+}
+
+nav ul li{
+    float: left;
+    margin-left: 500px;
+    color: rgb(216, 216, 216);
+}
+
+.logo img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+nav a{
+    width: 100px;
     text-decoration: none;
+    text-align: center;
 }
