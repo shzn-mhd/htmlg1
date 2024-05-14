@@ -7,16 +7,7 @@
 
 }
 
-body{
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('images/hero-bg.jpg');
-  background-size: cover; 
-  box-sizing: border-box;
-  background-position: center;
-   height: 100vh; 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} 
+
 
 .list-item{
   display: inline-block;
@@ -27,13 +18,15 @@ body{
   margin-top: 20px;   
 }
 
-nav{
+.nav{
   width: 100%;
   background: none;
   overflow: auto;
   justify-content: space-between;
   display: flex;
-  padding: 0 60px;
+  align-items: center;
+  padding: 0 100px;
+ 
 }
 
 nav ul{
@@ -50,7 +43,7 @@ nav ul li{
 }
 
 .logo img{
-  position: absolute;
+  
   margin-top: 15px;
   
 }
@@ -61,17 +54,28 @@ nav a{
   text-align: center;
 }
 
-.header-banner {
-  /* background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('images/hero-bg.jpg');
-  background-size: cover;  */
-  background-position: center; 
-   height: 100vh; 
-  text-align: center; 
+.header-banner{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('images/hero-bg.jpg');
+  background-size: cover; 
+  box-sizing: border-box;
+  background-position: center;
+  height: 100vh; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white; 
-  display: flex;
+
+} 
+
+
+
+.header-text{
+  position: absolute;
   align-items: center; 
+  text-align: center;
   justify-content: center;
-  flex-direction: column; /* Stack children vertically */
+  width: 100%;
+  top:50%;
 }
 
 .header-banner h1 {
